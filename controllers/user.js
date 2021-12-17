@@ -81,7 +81,7 @@ export const postUserLogin = async (req, res) => {
 
   // 토큰 생성
   const payload = { userId: user.id };
-  const option = { expiresIn: '10s' };
+  const option = { expiresIn: '1h' };
   // 사용자의 아이디, config폴더에 상수로 저장한 값으로 토큰을 생성하고 만기시간을 10초로 설정함
   const token = jwt.sign(payload, secretKey, option);
 

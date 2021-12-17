@@ -10,6 +10,7 @@ import usersRouter from './routes/users.js';
 import bookRouter from './routes/book.js';
 import movieRouter from './routes/movie.js';
 import postRouter from './routes/post.js';
+import uploadRouter from './routes/upload.js';
 
 const __dirname = path.resolve();
 var app = express();
@@ -30,6 +31,7 @@ app.use('/user', usersRouter);
 app.use('/book', bookRouter);
 app.use('/movie', movieRouter);
 app.use('/post', postRouter);
+app.use('/upload', uploadRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

@@ -1,5 +1,5 @@
-import { JWT_SECRET_KEY as secretKey } from '../config/index.js';
-import jwt from 'jsonwebtoken';
+import jwt from "jsonwebtoken";
+import { JWT_SECRET_KEY as secretKey } from "../config/index.js";
 
 export const verifyToken = (token) => {
   try {
@@ -9,5 +9,3 @@ export const verifyToken = (token) => {
     return false;
   }
 };
-
-export default verifyToken;

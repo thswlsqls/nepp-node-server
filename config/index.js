@@ -1,1 +1,3 @@
-export const JWT_SECRET_KEY = "secret키입니다~!@#";
+import dotenv from "dotenv";
+dotenv.config();
+export const JWT_SECRET_KEY = process.env.JWT_SECRET_KEY;
